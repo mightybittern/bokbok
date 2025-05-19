@@ -8,19 +8,31 @@ function App() {
 
   return (
     <>
-      <div className="dialog">
-        <Dialog />
-        <nav>
-          <ul>
-            <li>home</li>
-            <li>gallery</li>
-            <li>about us</li>
-            <li>find us</li>
+      <header class="header">
+        <div className="header__logo">
+          <img src="./src/assets/images/bok.webp" width='200' height='200' alt="bok logo"></img>
+        </div>
+        <nav className="header__nav">
+          <ul className="header__nav-list">
+            <li className="header__nav-item">
+              <a className='header__nav-link' href="#index.html">home</a>
+            </li>
+            <li className="header__nav-item">
+              <a className='header__nav-link' href="#gallery.html">gallery</a>
+            </li>
+            <li className="header__nav-item">
+              <a className='header__nav-link' href="#about.html">about us</a>
+            </li>
           </ul>
         </nav>
-      </div>
-      <img src="./coq-inu-coin-svg.svg" alt="doggo"></img>
-      <h1>coq-inu-coin</h1>
+      </header>
+      <section className="hero">
+        <h1 className="hero__title">Bok Bok</h1>
+      </section>
+      {/* <div className="dialog"> */}
+      {/* <Dialog /> */}
+      {/* </div> */}
+
       <p>stay tuned</p>
     </>
   );
