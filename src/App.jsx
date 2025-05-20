@@ -2,6 +2,7 @@ import { useState } from 'react';
 import viteLogo from '/coq-inu-coin-svg.svg';
 import './App.scss';
 import Dialog from './components/dialog/dialog';
+import construction from './assets/images/under-construction.webp';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -9,7 +10,7 @@ function App() {
   return (
     <>
       <div class="welcome">
-        <img src='./src/assets/images/under-construction.webp' width="1280" height='1280' alt="bok construction" />
+        <img src={construction} width="1280" height='1280' alt="bok construction" />
       </div>
       {/* <header class="header">
         <div className="header__logo">
