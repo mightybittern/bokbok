@@ -8,7 +8,10 @@ function App() {
 
   return (
     <>
-      <header class="header">
+      <div class="welcome">
+        <img src='./src/assets/images/under-construction.webp' width="1280" height='1280' alt="bok construction" />
+      </div>
+      {/* <header class="header">
         <div className="header__logo">
           <img src="./src/assets/images/bok.webp" width='200' height='200' alt="bok logo"></img>
         </div>
@@ -28,12 +31,17 @@ function App() {
       </header>
       <section className="hero">
         <h1 className="hero__title">Bok Bok</h1>
-      </section>
+      </section> */}
       {/* <div className="dialog"> */}
       {/* <Dialog /> */}
       {/* </div> */}
 
-      <p>stay tuned</p>
+      <p className="welcome__text">
+        stay tuned
+        <span className="dots">
+          <span>.</span><span>.</span><span>.</span>
+        </span>
+      </p>
     </>
   );
 }
