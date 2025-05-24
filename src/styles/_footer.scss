@@ -1,0 +1,13 @@
+footer {
+    background-color: var(--accent);
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 5px solid var(--primary);
+
+    &__social-links {
+        margin: 0 0.5rem;
+        text-decoration: none;
+        color: var(--brown);
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,16 @@
+.main {
+  text-align: center;
+  padding: 4rem 2rem;
+
+  &__title {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    color: var(--text);
+    margin-bottom: 2rem;
+  }
+}

@@ -1,12 +1,17 @@
 @use './styles/bp.scss';
 @use './styles/header.scss';
+@use './styles/main.scss';
+@use './styles/footer.scss';
+@use './styles/btn.scss';
 
 :root {
-  --main-bg-color: #e53935;
-  --main-text-color: #212121;
-  --main-text-hover-color: #f9f9f9;
-  --webkit-text-stroke: #7c5d5d;
-  --text-shadow: #b63f3f;
+  --primary: #ff6b6b;
+  --accent: #ffbe0b;
+  --cream: #fff8e7;
+  --brown: #6a4e42;
+  --text: #2f2f2f;
+  --font: 'Comic Neue', cursive, sans-serif;
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -47,13 +52,16 @@ ol {
 }
 
 body {
-  /* 4. Add accessible line-height */
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
   line-height: 1.5;
-  /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  font-family: var(--font);
+  background-color: var(--cream);
+  color: var(--text);
 }
 
-/* 6. Improve media defaults */
 img,
 picture,
 video,
@@ -63,7 +71,6 @@ svg {
   max-width: 100%;
 }
 
-/* 7. Inherit fonts for form controls */
 input,
 button,
 textarea,
@@ -71,7 +78,6 @@ select {
   font: inherit;
 }
 
-/* 8. Avoid text overflows */
 p,
 h1,
 h2,
@@ -82,7 +88,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* 9. Improve line wrapping */
 p {
   text-wrap: pretty;
 }
@@ -102,18 +107,9 @@ a {
   cursor: pointer;
 }
 
-/*
-  10. Create a root stacking context
-*/
 #root,
 #__next {
   isolation: isolate;
-}
-
-body {
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
